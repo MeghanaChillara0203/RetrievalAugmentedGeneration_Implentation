@@ -116,7 +116,7 @@ By completing this project, you will:
 
 ---
 
-## Acknowledgements
+###  Acknowledgements
 - **Instructor**: Alfredo Deza, for providing detailed guidance and the Applied RAG Notebook as a starting point.
 - **Duke University**: For offering the "Introduction to Retrieval Augmented Generation (RAG)" course.
 - **Qdrant and Sentence Transformers**: For enabling robust vector search and embedding capabilities.
