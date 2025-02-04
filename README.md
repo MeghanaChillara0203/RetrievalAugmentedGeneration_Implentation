@@ -1,7 +1,3 @@
-Here's the **entire README document** fully formatted in Markdown for **GitHub or any Markdown-based documentation**:
-
----
-
 # Retrieval Augmented Generation (RAG) Implementation with Qdrant and Llamafile
 
 This repository contains an end-to-end implementation of the **Retrieval Augmented Generation (RAG)** pattern. The project was developed as part of the "Introduction to Retrieval Augmented Generation (RAG)" course by **Duke University** on Coursera, under the guidance of instructor **Alfredo Deza**.
