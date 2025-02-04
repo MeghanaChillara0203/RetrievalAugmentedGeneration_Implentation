@@ -122,7 +122,7 @@ By completing this project, you will:
 ### **Flow Diagram**
 The following diagram illustrates the Retrieval-Augmented Generation (RAG) process using **Qdrant** and **Llamafile**:
 
-![RAG Flow Diagram](./path-to-image/image.png) <!-- Update with correct image path -->
+![RAG Flow Diagram](./img/RAG_Flow.png) 
 
 ---
 
