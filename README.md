@@ -1,3 +1,7 @@
+Here's the **entire README document** fully formatted in Markdown for **GitHub or any Markdown-based documentation**:
+
+---
+
 # Retrieval Augmented Generation (RAG) Implementation with Qdrant and Llamafile
 
 This repository contains an end-to-end implementation of the **Retrieval Augmented Generation (RAG)** pattern. The project was developed as part of the "Introduction to Retrieval Augmented Generation (RAG)" course by **Duke University** on Coursera, under the guidance of instructor **Alfredo Deza**.
@@ -14,6 +18,7 @@ The implementation uses **Qdrant** as the vector database and **Llamafile** as t
 - [Steps to Run the Project](#steps-to-run-the-project)
 - [Notebooks in This Repository](#notebooks-in-this-repository)
 - [Technologies Used](#technologies-used)
+- [RAG Flow Diagram & Explanation](#rag-flow-diagram--explanation)
 - [Acknowledgements](#acknowledgements)
 
 ---
@@ -116,9 +121,54 @@ By completing this project, you will:
 
 ---
 
-####  Acknowledgements
+## RAG Flow Diagram & Explanation
+
+### **Flow Diagram**
+The following diagram illustrates the Retrieval-Augmented Generation (RAG) process using **Qdrant** and **Llamafile**:
+
+![RAG Flow Diagram](./path-to-image/image.png) <!-- Update with correct image path -->
+
+---
+
+### **Step-by-Step Explanation**
+#### **1️⃣ User Query Submission**
+- The user submits a **query**.
+- The query is sent to the **Query Embedding module**.
+
+#### **2️⃣ Query Embedding (Sentence Transformers)**
+- The query is **converted into a vector representation** using **Sentence Transformers**.
+- This **embedded query** is then forwarded to **Qdrant**.
+
+#### **3️⃣ Qdrant Vector Database (Storage & Retrieval)**
+- **Qdrant** stores **vectorized documents** and performs **similarity search** to find relevant data.
+- The **retrieved documents** are sent back to **augment the original query**.
+
+#### **4️⃣ Query + Retrieved Context Formation**
+- The retrieved documents are **merged with the original query**.
+- This **augmented query** (query + retrieved documents) enhances **context awareness**.
+
+#### **5️⃣ Pre-trained LLM (Llamafile / OpenAI API)**
+- The **augmented query** is sent to the **Pre-trained LLM** (either **Llamafile** for local inference or **OpenAI API** for cloud-based response).
+- The **LLM processes the input** and generates a **context-aware response**.
+
+#### **6️⃣ Response to the User**
+- The **LLM-generated response** is sent back to the **user**.
+- This response is **more informed** due to the **retrieved context**.
+
+---
+
+## **Why Use This RAG Approach?**
+✅ **Retrieval-Based Context** → Improves LLM accuracy with **external knowledge retrieval**.  
+✅ **Minimizes Hallucination** → The model **grounds responses** in real data rather than relying solely on pre-trained knowledge.  
+✅ **Efficient Search** → Qdrant’s **vector similarity search** speeds up retrieval and scales well with large datasets.  
+✅ **Flexible LLM Support** → Works with both **local (Llamafile)** and **cloud-based (OpenAI API)** models.
+
+---
+
+## **Acknowledgements**
 - **Instructor**: Alfredo Deza, for providing detailed guidance and the Applied RAG Notebook as a starting point.
 - **Duke University**: For offering the "Introduction to Retrieval Augmented Generation (RAG)" course.
 - **Qdrant and Sentence Transformers**: For enabling robust vector search and embedding capabilities.
 
-This repository provides a foundational implementation of RAG systems. Feel free to extend it by adding advanced features such as fine-tuned LLMs, hybrid search, or deployment as a web application. Happy coding!
+This repository provides a foundational implementation of RAG systems. Feel free to extend it by adding advanced features such as **fine-tuned LLMs, hybrid search, or deployment as a web application**. Happy coding! 🚀
+```
