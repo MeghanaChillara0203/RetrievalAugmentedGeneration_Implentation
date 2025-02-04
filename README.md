@@ -167,4 +167,3 @@ The following diagram illustrates the Retrieval-Augmented Generation (RAG) proce
 - **Qdrant and Sentence Transformers**: For enabling robust vector search and embedding capabilities.
 
 This repository provides a foundational implementation of RAG systems. Feel free to extend it by adding advanced features such as **fine-tuned LLMs, hybrid search, or deployment as a web application**. Happy coding! 🚀
-```
